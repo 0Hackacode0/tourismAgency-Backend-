@@ -1,7 +1,9 @@
 package com.hackacode.tourismAgency.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Date;
@@ -10,6 +12,8 @@ import java.util.Date;
 @Setter
 @Getter
 @Table(name="sale")
+@NoArgsConstructor
+@AllArgsConstructor
 public class SaleEntity {
 
     @Id
