@@ -16,5 +16,5 @@ public class EmployeeEntity extends PersonEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_employee;
+    private Long idEmployee;
 }

@@ -16,7 +16,7 @@ public class SalePackageEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_touristpackage;
-    private Integer package_code;
-    private Double package_cost;
+    private Long idTouristpackage;
+    private Integer packageCode;
+    private Double packageCost;
 }

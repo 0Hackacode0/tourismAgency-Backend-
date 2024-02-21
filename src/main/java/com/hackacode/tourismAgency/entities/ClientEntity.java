@@ -16,7 +16,7 @@ public class ClientEntity extends PersonEntity{
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_client;
+    private Long idClient;
 
 
 }

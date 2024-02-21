@@ -18,11 +18,11 @@ public class TravelInventoryItemEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idtouristservice;
-    private Integer code_service;
+    private Long idTouristService;
+    private Integer codeService;
     private String name;
     private String description;
     private String destination;
-    private Double cost_service;
-    private Date date_service;
+    private Double costService;
+    private Date dateService;
 }

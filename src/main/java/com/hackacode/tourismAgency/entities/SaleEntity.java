@@ -18,8 +18,8 @@ public class SaleEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_sale;
-    private Long sale_number;
+    private Long idSale;
+    private Long saleNumber;
     private String payway;
-    private Date sale_date;
+    private Date saleDate;
 }

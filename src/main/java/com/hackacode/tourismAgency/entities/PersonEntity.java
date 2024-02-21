@@ -8,10 +8,10 @@ import lombok.Setter;
 public abstract class PersonEntity {
     private String dni;
     private String nationality;
-    private String cell_phone;
+    private String cellPhone;
     private String name;
-    private String last_name;
-    private String date_of_birth;
+    private String lastName;
+    private String dateOfBirth;
     private String address;
     private String email;
 }

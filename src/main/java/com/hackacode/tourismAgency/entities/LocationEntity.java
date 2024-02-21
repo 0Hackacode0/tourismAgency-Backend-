@@ -16,9 +16,9 @@ import lombok.Setter;
 public class LocationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_location;
+    private Long idLocation;
     private String country;
     private String state;
     private String city;
-    private Long travel_inventory_item_id_touristservice;
+    private Long travelInventoryItemIdTouristservice;
 }
