@@ -6,20 +6,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Entity
 @Setter
 @Getter
-@Table(name="sale")
 @NoArgsConstructor
 @AllArgsConstructor
-public class SaleEntity {
+public class SalePackage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idSale;
-    private Long saleNumber;
-    private String payway;
-    private Date saleDate;
+    private Long idTouristPackage;
+    private Integer packageCode;
+    private Double packageCost;
 }

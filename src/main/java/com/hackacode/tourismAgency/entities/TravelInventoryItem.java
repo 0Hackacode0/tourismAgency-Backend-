@@ -1,24 +1,27 @@
 package com.hackacode.tourismAgency.entities;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Getter
+import java.util.Date;
+
 @Setter
-@Table(name="location")
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class LocationEntity {
+@Entity
+public class TravelInventoryItem {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idLocation;
-    private String country;
-    private String state;
-    private String city;
-    private Long travelInventoryItemIdTouristservice;
+    private Long idTravel;
+    private Integer codeService;
+    private String name;
+    private String description;
+    private String destination;
+    private Double costService;
+    private Date dateService;
 }

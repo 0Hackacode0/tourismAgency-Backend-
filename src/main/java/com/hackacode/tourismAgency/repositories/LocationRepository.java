@@ -1,9 +1,9 @@
 package com.hackacode.tourismAgency.repositories;
 
-import com.hackacode.tourismAgency.entities.LocationEntity;
+import com.hackacode.tourismAgency.entities.Location;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface LocationRepository extends JpaRepository<LocationEntity, Long> {
+public interface LocationRepository extends JpaRepository<Location, Long> {
 }
