@@ -2,13 +2,12 @@ package com.hackacode.tourismAgency.entities;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -19,4 +18,10 @@ public class Location {
     private String country;
     private String state;
     private String city;
+    @ManyToOne
+    @JoinColumn(name = "id_locat_orgns", foreignKey = @ForeignKey(name = "FK_LOCATION_ORIGINS"))
+    private TravelInventoryItem travelInventoriesOrigins;
+    @ManyToOne
+    @JoinColumn(name = "id_locat_dest", foreignKey = @ForeignKey(name = "FK_LOCATION_DEST"))
+    private TravelInventoryItem travelInventoriesDestinations;
 }

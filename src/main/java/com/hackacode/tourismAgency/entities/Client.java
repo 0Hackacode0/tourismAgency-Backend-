@@ -16,6 +16,8 @@ public class Client extends Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_client")
     private Long idClient;
-
+    @ManyToOne
+    @JoinColumn(name = "id_employee")
+    private Employee employee;
 
 }

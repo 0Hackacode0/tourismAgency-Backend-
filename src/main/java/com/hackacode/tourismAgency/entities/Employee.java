@@ -19,13 +19,11 @@ public class Employee extends Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_employee")
     private Long idEmployee;
-
-    @Column(nullable = false)
-    private String role;
-
+    private RoleEnum role;
+    private String userEmployee;
+    private String passwordEmployee;
     @Column(columnDefinition = "decimal(6,2)")
     private double salary;
-
     @OneToMany(mappedBy = "employee")
     private List<Sale> sales;
 }

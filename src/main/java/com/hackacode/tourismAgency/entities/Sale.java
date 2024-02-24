@@ -17,7 +17,7 @@ public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSale;
-    private Long saleNumber;
+    private int saleNumber;
     private Date saleDate;
     private SaleStatusEnum status;
     private PaymentMethodTypeEnum paymentMethod;
@@ -33,6 +33,5 @@ public class Sale {
     @OneToOne
     @JoinColumn(name = "id_client")
     private Client client;
-
 
 }

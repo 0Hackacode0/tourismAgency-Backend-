@@ -1,21 +1,23 @@
 package com.hackacode.tourismAgency.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Entity
+import java.util.List;
+
 @Setter
 @Getter
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class SalePackage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idTouristPackage;
-    private Integer packageCode;
-    private Double packageCost;
+    private double totalAmount;
+    @ManyToMany(mappedBy = "packages")
+    private List<TravelInventoryItem> travelItems;
 }
