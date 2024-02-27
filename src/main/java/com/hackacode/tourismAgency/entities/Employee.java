@@ -25,7 +25,6 @@ public class Employee extends Person {
     private String passwordEmployee;
     @Column(columnDefinition = "decimal(6,2)")
     private double salary;
-
     @OneToMany(mappedBy = "employee")
     @ToString.Exclude
     private List<Sale> sales;
