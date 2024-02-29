@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  touristAgency:
+    container_name: touristAgency
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      MYSQL_HOST: db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DB: touristAgency
+      MYSQL_URL: jdbc:mysql://db/touristAgency
+    depends_on:
+      - db
+
+  db:
+    container_name: touristAgencyDB
+    image: mysql:8.0.32
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: touristAgency
+
