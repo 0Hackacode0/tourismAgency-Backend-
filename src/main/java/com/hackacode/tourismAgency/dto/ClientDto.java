@@ -10,13 +10,13 @@ import lombok.NoArgsConstructor;
 public class ClientDto {
 
     private Long idClient;
-    private String name;
-    private String lastName;
-    private String address;
-    private String dni;
-    private String nationality;
-    private String cellPhone;
-    private String dateOfBirth;
-    private String email;
+    private String nameClient;
+    private String lastNameClient;
+    private String addressClient;
+    private String dniClient;
+    private String nationalityClient;
+    private String cellPhoneClient;
+    private String dateOfBirthClient;
+    private String emailClient;
     private EmployeeDto employee;
 }
