@@ -1,5 +1,7 @@
 package com.hackacode.tourismAgency.dto;
 
+import com.hackacode.tourismAgency.entities.Client;
+import com.hackacode.tourismAgency.entities.Employee;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,4 +21,6 @@ public class ClientDto {
     private String dateOfBirthClient;
     private String emailClient;
     private EmployeeDto employee;
+
+
 }
